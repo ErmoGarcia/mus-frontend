@@ -1,6 +1,5 @@
-import Welcome from '@/components/welcome'
 import Head from 'next/head'
-
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -13,7 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Welcome></Welcome>
+        <div className='h-screen flex flex-col justify-center items-center'>
+          <h1 className='text-center'>Welcome to Mus Online</h1>
+          <Link href="/login">Go!</Link>
+        </div>
       </main>
     </>
   )
